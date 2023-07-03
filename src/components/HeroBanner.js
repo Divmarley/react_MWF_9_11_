@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function HeroBanner() {
   return (
@@ -15,7 +16,7 @@ export default function HeroBanner() {
               <h4>Shop is fun</h4>
               <h1>Browse Our Premium Product</h1>
               <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass.</p>
-              <a class="button button-hero" href="#">Browse Now</a>
+              <Link class="button button-hero" href="/">Browse Now</Link>
             </div>
           </div>
         </div>

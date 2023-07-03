@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer class="footer">
-    <div class="footer-area">
-        <div class="container">
-            <div class="row section_gap">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget tp_widgets">
-                        <h4 class="footer_title large_title">Our Mission</h4>
+    <footer className="footer">
+    <div className="footer-area">
+        <div className="container">
+            <div className="row section_gap">
+                <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="single-footer-widget tp_widgets">
+                        <h4 className="footer_title large_title">Our Mission</h4>
                         <p>
                             So seed seed green that winged cattle in. Gathering thing made fly you're no 
                             divided deep moved us lan Gathering thing us land years living.
@@ -18,23 +19,23 @@ export default function Footer() {
                         </p>
                     </div>
                 </div>
-                <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget tp_widgets">
-                        <h4 class="footer_title">Quick Links</h4>
-                        <ul class="list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Brand</a></li>
-                            <li><a href="#">Contact</a></li>
+                <div className="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                    <div className="single-footer-widget tp_widgets">
+                        <h4 className="footer_title">Quick Links</h4>
+                        <ul className="list">
+                            <li><Link href="#">Home</Link></li>
+                            <li><Link href="#">Shop</Link></li>
+                            <li><Link href="#">Blog</Link></li>
+                            <li><Link href="#">Product</Link></li>
+                            <li><Link href="#">Brand</Link></li>
+                            <li><Link href="#">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget instafeed">
-                        <h4 class="footer_title">Gallery</h4>
-                        <ul class="list instafeed d-flex flex-wrap">
+                <div className="col-lg-2 col-md-6 col-sm-6">
+                    <div className="single-footer-widget instafeed">
+                        <h4 className="footer_title">Gallery</h4>
+                        <ul className="list instafeed d-flex flex-wrap">
                             <li><img src="img/gallery/r1.jpg" alt="" /></li>
                             <li><img src="img/gallery/r2.jpg" alt="" /></li>
                             <li><img src="img/gallery/r3.jpg" alt="" /></li>
@@ -44,18 +45,18 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget tp_widgets">
-                        <h4 class="footer_title">Contact Us</h4>
-                        <div class="ml-40">
-                            <p class="sm-head">
-                                <span class="fa fa-location-arrow"></span>
+                <div className="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                    <div className="single-footer-widget tp_widgets">
+                        <h4 className="footer_title">Contact Us</h4>
+                        <div className="ml-40">
+                            <p className="sm-head">
+                                <span className="fa fa-location-arrow"></span>
                                 Head Office
                             </p>
                             <p>123, Main Street, Your City</p>
 
-                            <p class="sm-head">
-                                <span class="fa fa-phone"></span>
+                            <p className="sm-head">
+                                <span className="fa fa-phone"></span>
                                 Phone Number
                             </p>
                             <p>
@@ -63,8 +64,8 @@ export default function Footer() {
                                 +123 456 7890
                             </p>
 
-                            <p class="sm-head">
-                                <span class="fa fa-envelope"></span>
+                            <p className="sm-head">
+                                <span className="fa fa-envelope"></span>
                                 Email
                             </p>
                             <p>
@@ -78,12 +79,12 @@ export default function Footer() {
         </div>
     </div>
 
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row d-flex">
-                <p class="col-lg-12 footer-text text-center">
+    <div className="footer-bottom">
+        <div className="container">
+            <div className="row d-flex">
+                <p className="col-lg-12 footer-text text-center">
                    
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true"></i> by <Link href="https://colorlib.com" target="_blank">Colorlib</Link>
 </p>
             </div>
         </div>
