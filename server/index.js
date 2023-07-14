@@ -53,22 +53,38 @@ app.get('/', (req, res) => {
 //   );
 // });
 
+app.post('/create/product', (req, res) => {
+  // const id  = req.body.id
+  const title = req.body.title;
+  const image = req.body.image;
+  const price = req.body.price;
+  const category = req.body.category;
 
-app.post('/create/product',(req,res)=>{
-  const id  = req.body.id
-  const title  = req.body.title
-  const image  = req.body.image
-  const price  = req.body.price
-  const category  = req.body.category 
+  connection.query(
+    'INSERT INTO product(title,image,price,category) VALUES (?,?,?,?)',
+    [title, image, price, category],
+    (error, results) => {
+      if (error) {
+        console.log('error');
+      } else {
+        res.send(results);
+      }
+    }
+  );
+});
 
-  connection.query("INSERT INTO product(id,title,image,price,category) VALUES (?,?,?,?,?)",[id,title,image,price,category], (error, results) => {
-    if (error) {
-      console.log('error');
+app.delete('/prodouct/delete/:id', (req, res) => {
+  const id = req.params.id;
+  // console.log("the id to delete is:: ",id);
+  connection.query('DELETE FROM product WHERE id =?', id, (err, result) => {
+    if (err) {
+      console.log(err);
     } else {
-      res.send(results);
+      // console.log(result);
+      res.json(result);
     }
   });
-})
+});
 
 app.listen(port, function () {
   console.log(`this app listening on port ${port}`);
@@ -83,6 +99,3 @@ app.listen(port, function () {
 // npm install mysql
 // or
 // npm i mysql
-
-
-
